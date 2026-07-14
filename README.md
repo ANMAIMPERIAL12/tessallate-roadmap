@@ -1,59 +1,50 @@
 # Tessellate — Interactive Development Roadmap & Learning Guide
 
-> **Privacy by mathematics. Trust by design.**
->
-> An elegant, interactive engineering handbook and timeline detailing how to build Tessellate: a privacy-preserving collaborative analytics platform that runs SQL-like queries over combined datasets without ever exposing raw databases.
+👉 **[Launch the Live Interactive Web App](https://anmaimperial12.github.io/tessallate-roadmap/)**
 
-This web application serves as the **official interactive roadmap** for developers and security analysts to learn how Tessellate is engineered from research to production across 11 key phases.
+Tessellate is a privacy-preserving collaborative analytics platform that enables organizations to execute analytical queries over combined datasets without sharing their raw records.
 
----
-
-## 🌟 Key Features
-
-- **11 Modular Engineering Phases**: Traces progress from Phase 0 (Foundations and Threat Modeling) all the way to Phase 10 (Kubernetes telemetry stream visualizer).
-- **Interactive SQL Simulator**: Compile and execute SQL queries (SUM, COUNT, AVG) inside a virtual compiler console, tracing the compilation DAG, mTLS routing, encryption (Microsoft SEAL), secure aggregation, and Differential Privacy noise addition.
-- **Progress Tracking & Persistence**: Check off tasks in the interactive *Definition of Done* list. Toggles update progress bars globally and are stored persistently in the browser's `localStorage` (refreshes will not lose your progress).
-- **Global Search Index**: Search instantly across phase titles, taglines, goals, tech stacks, or academic reading materials.
-- **Interactive Architectural Diagrams**: Fluid inline vector SVGs showing dataflow and cryptographic boundaries for every single phase.
-- **Curated Reading Library**: Includes links, reading times, and difficulty indicators for essential cryptographic papers, books, and official documentation.
-- **Premium CyFocus Aesthetics**: Designed with responsive layouts, an active network-particle canvas background, glassmorphism cards, and subtle micro-animations.
+This repository hosts the **Interactive Development Roadmap & Engineering Handbook** for Tessellate. It is designed to walk you through the end-to-end development of the platform across 11 key engineering phases—from mathematical modeling to production deployment.
 
 ---
 
-## 🚀 How to Run
-
-Because this project is built as a single, compiled, and self-contained static file, **no installations or build tools are required**.
-
-### Option A: Local Execution (Offline)
-1. Download the repository folder.
-2. Double-click [index.html](index.html) to open it directly in any modern web browser.
-
-### Option B: Hosting on GitHub Pages
-You can host this roadmap instantly for free:
-1. Push `index.html` to a public GitHub repository.
-2. Go to **Settings > Pages**.
-3. Under *Build and deployment*, set the branch to `main` and the folder to `/ (root)`.
-4. Click **Save**. Within 1 minute, your site will be live at `https://<your-username>.github.io/<repo-name>/`.
+## 🚀 Live Link
+You can open and interact with the guide directly in your browser:
+**[https://anmaimperial12.github.io/tessallate-roadmap/](https://anmaimperial12.github.io/tessallate-roadmap/)**
 
 ---
 
-## 📂 File Directory
+## 🌟 Interactive Features to Explore
 
-- `index.html` - The complete interactive roadmap application (Vanilla JS + CSS).
-- `description.txt` - Core Tessellate product architecture specification.
-- `design.txt` - Graphic guidelines and brand personality documentation.
-- `development-instructions.txt` - Step-by-step roadmap structure instructions.
-- `README.md` - Project documentation.
+When you launch the web application, you can interact with several educational modules:
+
+### 1. The 11-Phase Roadmap Timeline
+- Scroll through the project lifecycle from **Phase 0** (foundations & threat models) to **Phase 10** (visualizers & Kubernetes).
+- Click any phase card to open its **Chapter Guide**.
+
+### 2. Detailed Chapter Panels
+Each phase detail view features:
+- **Central Question & Goal**: The core challenge and primary engineering outcome of that phase.
+- **Workflow Steps**: Expandable accordion steps detailing the coding tasks.
+- **Dataflow Diagrams**: Custom inline SVG charts representing the architectural layout.
+- **Definition of Done Checklists**: Checkboxes that let you mark tasks complete. Your progress is synced to `localStorage` and dynamically updates the progress bar on the dashboard.
+- **Learning Resources**: Direct link cards to official manuals, books, and scientific research papers.
+- **Gantt Charts**: Estimated timeline breakdowns for research, coding, testing, and documentation.
+
+### 3. Query Compilation Simulator
+- Select from preset PostgreSQL dialect queries (SUM, COUNT, AVG).
+- Click **Execute Secure Computation Plan** to watch the simulator run.
+- Trace how queries are validated, compiled into an execution DAG, encrypted, homomorphically combined, and perturbed using **Differential Privacy** to yield a secure output.
+
+### 4. Global Search
+- Use the search bar in the top navigation to instantly query phases, technologies (e.g. *Rust*, *mTLS*, *SEAL*), reading resources, or deliverables.
 
 ---
 
-## ⚙️ Technical Foundations Detailed in Roadmap
+## 📂 Repository Structure
 
-If you complete every phase in this roadmap, you will gain hands-on knowledge in:
-- **Rust System Programming** (using Tokio, Axum, and SQLx)
-- **gRPC Services & Mutual TLS (mTLS)** (using Tonic)
-- **Homomorphic Encryption (HE)** (context parameter sets for Microsoft SEAL and OpenFHE)
-- **Secure Multi-Party Computation (MPC)** (Additive secret sharing and MP-SPDZ evaluator structures)
-- **Differential Privacy (DP)** (Laplace/Gaussian noise scaling algorithms)
-- **Cryptographic Auditing** (Merkle Trees and Ed25519 signatures)
-- **Cloud Orchestration** (multi-stage Docker containerization and Kubernetes namespaces)
+- `index.html` - The complete, self-contained single-page application.
+- `description.txt` - Architectural definitions of the Tessellate core engine.
+- `design.txt` - Brand visual identity and aesthetic guidelines.
+- `development-instructions.txt` - Roadmap content guidelines.
+- `README.md` - This user guide.
